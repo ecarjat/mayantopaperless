@@ -48,21 +48,17 @@
 
 ## Usage
 1. Edit `config.json` with your environment details.
-2. Optional lint/static check:
-   ```bash
-   python -m py_compile migration.py
-   ```
-3. Dry run (count only):
+2. Dry run (count only):
    ```bash
    python migration.py --count-only --debug
    ```
    - Confirms credentials/connectivity and prints how many documents would migrate.
-4. Verify a single download:
+3. Verify a single download:
    ```bash
    python migration.py --download-first --debug
    ```
    - Saves the first eligible document as `sample_<doc_id>_<name>` locally without uploading.
-5. Run the migration:
+4. Run the migration:
    ```bash
    python migration.py --debug
    ```
@@ -81,4 +77,4 @@
 - **400 from Paperless**: Typically indicates empty/unsupported files. Use `--debug` and/or `--download-first` to inspect the source.
 - **Duplicates**: Confirm the Mayan moved tag exists and matches `mayan_moved_tag`.
 
-Keep `config.json` secure, as it contains credentials and API tokens. Adjust mappings and rerun as needed to migrate additional document types.
+Adjust mappings and rerun as needed to migrate additional document types.
