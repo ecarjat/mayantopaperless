@@ -1,0 +1,19 @@
+{
+  "mayan_base": "https://mayan.example.com/",
+  "paperless_base": "https://paperless.example.com/",
+  "mayan_user": "admin",
+  "mayan_pass": "changeme",
+  "mayan_moved_tag": "moved",
+  "mappings": {
+    "ExampleDocType": {
+      "paperless_token": "paperless-api-token",
+      "paperless_tag_name": "ExampleTag"
+    }
+  },
+  "export_poll_interval": 1.0,
+  "export_poll_timeout": 60.0,
+  "download_retry_limit": 5,
+  "download_backoff_min": 0.5,
+  "download_backoff_max": 5.0,
+  "download_backoff_multiplier": 2.0
+}
